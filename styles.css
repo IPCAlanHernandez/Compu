@@ -1,0 +1,28 @@
+.INSTITUTO {
+    background-color: white;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+
+}
+
+.titulo {
+    color: rgb(12, 62, 143);
+
+}
+
+body {
+    background-color: burlywood;
+}
+
+table {
+    margin-left: 45%;
+    border-color: rgb(255, 255, 255);
+    border-radius: 30%;
+}
+
+
+
+

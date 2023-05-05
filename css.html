@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <link href="css.css" rel="stylesheet">
+    </head>
+    <body>
+        <h4><a href="index.html">Regresar a pagina de inicio.</a></h4>
+        <img class="logo-css" src="css.png">
+        <hr size="5px" color=" (21, 21, 77)">
+        <u><h1>CSS</h1></u>
+        <br>
+        <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML o XML (en-US) (incluyendo varios lenguajes basados en XML como SVG, MathML o XHTML). CSS describe como debe ser renderizado el elemento estructurado en la pantalla, en papel, en el habla o en otros medios.</p>
+        <hr size="5px" color=" (21, 21, 77)">
+        <br>
+        <u><h2>Que es realmente CSS?</h2></u>
+        <br>
+        <p>Como HTML, CSS (Cascading Style Sheets) u Hojas de estilo en cascada en español, no es realmente un lenguaje de programación, tampoco es un lenguaje de marcado. Es un lenguaje de hojas de estilo, es decir, te permite aplicar estilos de manera selectiva a elementos en documentos HTML. Por ejemplo, para seleccionar todos los elementos de párrafo en una página HTML y volver el texto dentro de ellos de color rojo, has de escribir este CSS:</p>
+        <br>
+        <p>p {<br>
+            color: red;<br>
+          }
+          </p>
+          <br>
+        <p>Vas a probarlo: pega estas tres líneas de CSS en un nuevo archivo en tu editor de texto y guarda este archivo como style.css en tu directorio styles (estilos).
+
+
+            Pero aún debes aplicar el CSS a tu documento HTML, de otra manera el estilo CSS no cambiará cómo tu navegador muestra el documento HTML.
+        </p>
+        <br>
+        <img src="14.jpg.png">
+        <br>
+        <p>Mira un poco más a detalle el ejemplo anterior:</p>
+        <br>
+        <img src="15.jpg.png">
+        <br>
+        <hr size="5px" color=" (21, 21, 77)">
+        <p>Una cosa que notarás sobre la escritura de CSS es que trata mucho sobre cajas —ajustando su tamaño, color, posición, etc—. Puedes pensar en la mayoría de los elementos HTML de tu página como cajas apiladas una sobre la otra.<br>
+
+
+            Cada una de las cajas que ocupa espacio en tu página tiene propiedades como estas:
+            </p><br>
+            <lu>
+                <li>padding (relleno), el espacio alrededor del contenido. En el ejemplo siguiente, es el espacio alrededor del texto del párrafo.</li>
+                <li>border (marco), la línea que se encuentra fuera del relleno</li>
+                <li>margin (margen), el espacio fuera del elemento que lo separa de los demás.</li>
+                <li>width (ancho del elemento)</li>
+                <li>background-color, el color de fondo del contenido y del relleno</li>
+                <li>color, el color del contenido del elemento (generalmente texto)</li>
+                <li>text-shadow: coloca una sombra difuminada en el texto dentro del elemento</li>
+                <li>display: selecciona el modo de visualización para el elemento (no te preocupes de esto por ahora)</li>
+            </lu>
+            <br>
+            <h2>Ejemplo:</h2>
+            <br>
+            <img src="16.jpg.png">
+            <br>
+            <hr size="5px" color=" (21, 21, 77)">
+            <h2>Selectores en CSS</h2>
+            <p>Un selector CSS es la primera parte de una regla CSS. Es un patrón de elementos y otros términos que indican al navegador qué elementos HTML se seleccionan para aplicarles una regla que incluye los valores de las propiedades CSS. El elemento o los elementos seleccionados por el selector se denominan sujeto del selector.</p>
+            <hr size="5px" color=" (21, 21, 77)">
+            <br>
+            <h2> Tipos de Selectores</h2>
+            <p>Selectores de tipo, de clase y de ID<br>
+
+                Este grupo incluye selectores que delimitan un elemento HTML, como por ejemplo un h1.<br>
+                
+                h1 { }<br>
+                
+                También incluye selectores que delimitan una clase:<br>
+                
+                .box { }<br>
+                o un ID:<br>
+                
+                #unique { }<br>
+                </p>
+                <hr size="5px" color=" (21, 21, 77)">
+                <br>
+                <h2>Selectores de atributo</h2>
+                <p>Este grupo de selectores te proporciona diferentes formas de seleccionar elementos según la presencia de un atributo determinado en un elemento:<br>
+
+                    a[title] { }<br>
+                    
+                    O incluso hacer una selección basada en la presencia de un atributo que tiene un valor particular asignado:<br>
+                    
+                    a[href="https://example.com"] { }<br>
+                    <hr size="5px" color=" (21, 21, 77)">
+                    
+                    
+                    <h2>Las pseudoclases y los pseudoelementos</h2>
+                    Este grupo de selectores incluye pseudoclases, que aplican estilo a ciertos estados de un elemento. La pseudoclase :hover, por ejemplo, selecciona un elemento solo cuando se le pasa el ratón por encima.<br>
+                    
+                    a: hover {}<br>
+                    También incluye pseudoelementos, que seleccionan una parte determinada de un elemento en vez del elemento en sí. Por ejemplo, ::first-line siempre selecciona la primera línea del texto que se encuentra dentro de un elemento p, en el ejemplo siguiente), y actúa como si un elemento span hubiera delimitado la primera línea, seleccionado y aplicado estilo.<br>
+
+                    p::first-line { }
+                    <hr size="5px" color=" (21, 21, 77)">
+                    
+                    </p>
+                    <br>
+                    <h2>Conbinadores</h2>
+                    <p>El último grupo de selectores combina otros selectores con el fin de delimitar elementos de nuestros documentos. El ejemplo siguiente selecciona los párrafos que son hijos directos del elemento article utilizando el operador de combinación hijo (>):<br>
+
+                        article > p { }<br>
+                        <hr size="5px" color=" (21, 21, 77)">
+                        
+                        <h2>Ayuda:</h2><br>
+                        *     Selecciona todos los elementos del DOM <br>
+                        
+                        
+                        Cuando quieres agregar un color o alguna propiedad a varios elementos en css 
+                        Sin hacer uno por uno puedes ponerlos en orden en una misma fila dividiéndolos 
+                        Con una coma como por ejemplo:<br>
+                        
+                        
+                        H1,h2,h3{<br>
+                          
+                              Color: blue;<br>
+                             }<br>
+                        
+                        
+                        
+                        Siempre que se agrega una propiedad se debe cerrar con punto y coma.<br>
+                        </p>
+                        <hr size="5px" color=" (21, 21, 77)">
+                        <h2>Background-color</h2>
+                        <p>Background-color es un propiedad de CSS que define el color de fondo de un elemento, puede ser el valor de un color o la palabra clave transparent.</p>
+                        <hr size="5px" color=" (21, 21, 77)">
+                        <br>
+                        <h2>Border-color</h2>
+                        <p>la propiedad border-color es un atajo para definir el color de los cuatro bordes de un elemento</p>
+                        <hr size="5px" color=" (21, 21, 77)">
+                        <br>
+                        <h2>Color</h2>
+                        <p>La propiedad de CSS color selecciona el valor de color de primer plano del contenido de elemento de texto y decoraciones de texto. Tambien establece el valor currentcolor (en-US) que se puede usar como un valor indirecto en otras propiedades, y es el valor predeterminado para otras propiedades de color, como border-color.</p>
+                        <hr size="5px" color=" (21, 21, 77)">
+                        <br>
+                        <h2>Top</h2>
+                        <p>La propiedad top especifica parte de la posición de un elemento posicionado. No tiene efecto en elementos no posicionados.</p>
+                        <hr size="5px" color=" (21, 21, 77)">
+                        <br>
+                        <h2>Left</h2>
+                        <p>La propiedad left especifica parte de la posición de un elemento (posicionado - es decir, con una posición determinada por código).</p>
+                        <hr size="5px" color=" (21, 21, 77)">
+                        <br>
+                        <h2>Positión</h2>
+                        <p>La propiedad position de CSS especifica cómo un elemento es posicionado en el documento. Las propiedades top, right, bottom, y left determinan la ubicación final de los elementos posicionados.</p>
+                        <hr size="5px" color=" (21, 21, 77)">
+                        <h4><a href="index.html">Regresar a pagina de inicio.</a></h4>
+
+
+
+
+    </body>
+</html>
+
+

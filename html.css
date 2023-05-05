@@ -1,0 +1,29 @@
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 20%;
+    border-color: aqua;
+    border-style: dashed;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    color: blue; 
+    font-size: xx-large;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size:large;
+}
+
+body {
+    background-color: cadetblue;
+}
